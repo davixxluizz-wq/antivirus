@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download - Antivírus Ferramentas do Sistema</title>
+    <style>
+        body {
+            background-color: #121620; /* Fundo escuro igual ao botão anterior */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Caixa central do download */
+        .card-download {
+            background-color: #1a1f2c;
+            border: 2px solid #ff8c00; /* Detalhes em laranja */
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(255, 140, 0, 0.2);
+        }
+
+        .icone {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            color: #ff8c00;
+        }
+
+        p {
+            color: #a0a5b5;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* O botão de download estilizado */
+        .btn-download {
+            display: inline-block;
+            background-color: #ff8c00;
+            color: white;
+            text-decoration: none; /* Remove o sublinhado do link */
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+        }
+
+        .btn-download:hover {
+            background-color: #e07b00;
+            transform: translateY(-2px); /* Efeito de subir de leve */
+            box-shadow: 0 6px 20px rgba(255, 140, 0, 0.6);
+        }
+
+        .info-arquivo {
+            margin-top: 15px;
+            font-size: 11px;
+            color: #656a7a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-download">
+        <div class="icone">📦</div>
+        <h2>Script Antivírus (.py)</h2>
+        <p>Baixe a ferramenta automatizada para rodar o comando SFC /SCANNOW 3 vezes e limpar os processos com o taskkill.</p>
+        
+        <!-- O ATRIBUTO 'download' força o navegador a baixar em vez de abrir -->
+        <a href="antivirus.py" download="antivirus_scannow.py" class="btn-download">
+            Baixar Arquivo
+        </a>
+
+        <div class="info-arquivo">Formato: .py | Tamanho: ~2 KB</div>
+    </div>
+
+</body>
+</html>
+
